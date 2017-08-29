@@ -1,0 +1,74 @@
+<html>
+    <head>
+
+    <header>
+console.log()
+    </header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="https://cdn.airmap.io/js/maps/v2.2/airmap.map.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            #airspaceMap {
+                position: absolute;
+                width: 75%;
+                height: 75%;
+            
+            .button {
+                position: relative;
+                padding: 5px 15px;
+                left: -8px;
+                border: 2px solid #207cca;
+                background-color#207cca;
+                color:#fafafa;
+            }
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+    <h1>
+        "This is the AirMap Search"
+    </h1>
+        
+        <div id="airspaceMap">
+        
+        <link rel="stylesheet" type="text/css" href="C:\Users\Lilith\Desktop\button css">
+
+        <input type = "button" value ="Search">
+        <input type = "text" placeholder="Search">
+            <!-- map is loaded here -->
+        </div>
+        <script>
+            var config = {
+        "airmap": {
+            "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVkZW50aWFsX2lkIjoiY3JlZGVudGlhbHxSbUwzUk1OU3liTTlwemhvQlhsb3FGUmdnbmdBIiwiYXBwbGljYXRpb25faWQiOiJhcHBsaWNhdGlvbnx6ZEVYd1k3aUxSR0tlWnU4dmRPWFQ3bDN4d3giLCJvcmdhbml6YXRpb25faWQiOiJkZXZlbG9wZXJ8WHFQdzBsWmZXZzVtb0xjRUtFMlhnVDVXN0J5ZyIsImlhdCI6MTQ5NjM1MzkyNH0.a_cZMYkt2G_X06ZeUa9ImIUmqTlX--0Z2fCgYY5C0Jg"
+        },
+    
+        "auth0": {
+            "client_id": "EY18riEsRTX83Q4voSK8BtZVbQgL1gta",
+            "callback_url": "https://localhost:8080"
+    
+        },
+        "mapbox": {
+            "access_token": 
+            "pk.eyJ1IjoibWFyeWhqZW4iLCJhIjoiY2oydXdlYzR4MDAxMDJxcXA1N2V0aXZ3aSJ9.TYORTWbIlJACbC69VE-Z1w"
+
+        }
+            }/* your config json generated from AirMap's Developer Portal */
+            
+            var map = new Airmap.Map(config, {
+                container: 'airspaceMap',
+                center: [33.9416, -118.4085],
+                layers: ['airports_recreational', 'national_parks', 'tfrs', 'wildfires']
+                /* refer to the docs for a comprehensive list of options */
+            });
+
+
+        </script>
+    </body>
+</html>
