@@ -1,21 +1,28 @@
 <html>
     <head>
-
+        <!-- <search style="background: red",> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
     <header>
-console.log()
+
     </header>
+        <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <script src="https://cdn.airmap.io/js/maps/v2.2/airmap.map.min.js"></script>
-        <style>
+
+     <style>
             body {
                 margin: 0;
                 padding: 0;
+
             }
+
             #airspaceMap {
                 position: absolute;
-                width: 75%;
-                height: 75%;
+                width: 100%;
+                height: 100%;
             
+            }
             .button {
                 position: relative;
                 padding: 5px 15px;
@@ -23,25 +30,29 @@ console.log()
                 border: 2px solid #207cca;
                 background-color#207cca;
                 color:#fafafa;
-            }
 
             }
 
-        </style>
+    </style>
+    
     </head>
-    <body>
+<body>
 
     <h1>
         "This is the AirMap Search"
     </h1>
-        
-        <div id="airspaceMap">
-        
-        <link rel="stylesheet" type="text/css" href="C:\Users\Lilith\Desktop\button css">
 
-        <input type = "button" value ="Search">
-        <input type = "text" placeholder="Search">
-            <!-- map is loaded here -->
+
+        <div id="gryzzlProd">
+        <a href="https://gryzzl.prod.airmap.com/admin/search">Prod.Gryzzl</a> 
+        <input id ="gryzzlSearch" type ="Search" placeholder ="prod">
+        </div>
+
+
+        <div id="airspaceMap">
+        <input id="button" type = "button" value ="Go">
+        <input id="search" type="text" placeholder="Search">
+        
         </div>
         <script>
             var config = {
@@ -59,7 +70,7 @@ console.log()
             "pk.eyJ1IjoibWFyeWhqZW4iLCJhIjoiY2oydXdlYzR4MDAxMDJxcXA1N2V0aXZ3aSJ9.TYORTWbIlJACbC69VE-Z1w"
 
         }
-            }/* your config json generated from AirMap's Developer Portal */
+            }/* your config json generated from A100100100100100100100100100100100100100100100irMap's Developer Portal */
             
             var map = new Airmap.Map(config, {
                 container: 'airspaceMap',
@@ -70,5 +81,7 @@ console.log()
 
 
         </script>
+
+
     </body>
 </html>
